@@ -7,6 +7,7 @@ const App = () => {
     const [answer1, setAnswer1] = useState('Charmander');
     const [answer2, setAnswer2] = useState('Pikachu');
     const [answer3, setAnswer3] = useState('Bulbasaur');
+    const [answer4, setAnswer4] = useState('Squirtle');
 
     const submitAnswers = () => {
         let score = 0;
@@ -23,19 +24,20 @@ const App = () => {
             score = score + 1;
         }
 
+        if (answer4 === 'Squirtle') {
+            score = score + 1;
+        }
+
         let feedback = '';
 
-        if (score === 3) {
-            feedback = 'Well done! You got every answer correct!';
-        } else if (score === 2) {
-            feedback = 'Good job! You almost got them all!';
-        } else {
-            feedback = 'You SUCK';
-        }
+        if (score === 4) {feedback = 'Nice';}
+        else if (score === 3) {feedback = 'Almost there';}
+        else if (score === 2) {feedback = 'You can do better'}
+        else {feedback = 'You SUCK';}
 
         Alert.alert(
             'Quiz Results',
-            'You got ' + score + ' out of 3 answers correct!\n\n' + feedback
+            'You got ' + score + ' out of 4 answers correct!\n' + feedback
         );
     };
 
@@ -75,6 +77,16 @@ const App = () => {
                 option3="Pikachu"
                 onValueChange={(value) => setAnswer3(value)}
                 answer="Charmander"
+            />
+
+            <Question
+                number={4}
+                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIjxfnSF1b0qh3XtFfdb6S8xooV4AAUiVkUwiNU7zCQ&s"
+                option1="Bulbasaur"
+                option2="Charmander"
+                option3="Squirtle"
+                onValueChange={(value) => setAnswer4(value)}
+                answer="Squirtle"
             />
 
             <Button
