@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, Image, TouchableOpacity, Alert} from 'react-native';
 import {Picker} from '@react-native-picker/picker';
 
-const Question = ({number, image, option1, option2, option3, onValueChange, answer}) => {
+const Question = ({number, image, option1, option2, option3, option4, onValueChange, answer}) => {
     return (
         <View>
             <Text style={{ fontSize: 18 }}>
@@ -18,6 +18,7 @@ const Question = ({number, image, option1, option2, option3, onValueChange, answ
                 <Picker.Item label={option1} value={option1} />
                 <Picker.Item label={option2} value={option2} />
                 <Picker.Item label={option3} value={option3} />
+                <Picker.Item label={option4} value={option4} />
             </Picker>
         </View>
     );

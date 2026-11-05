@@ -55,6 +55,7 @@ const App = () => {
                 option1="Charmander"
                 option2="Pikachu"
                 option3="Squirtle"
+                option4="Bulbasaur"
                 onValueChange={(value) => setAnswer1(value)}
                 answer="How do you not know this is Pikachu"
             />
@@ -65,6 +66,7 @@ const App = () => {
                 option1="Pikachu"
                 option2="Squirtle"
                 option3="Bulbasaur"
+                option4="Charmander"
                 onValueChange={(value) => setAnswer2(value)}
                 answer="Bulbasaur"
             />
@@ -75,6 +77,7 @@ const App = () => {
                 option1="Bulbasaur"
                 option2="Charmander"
                 option3="Pikachu"
+                option4="Squirtle"
                 onValueChange={(value) => setAnswer3(value)}
                 answer="Charmander"
             />
@@ -85,6 +88,7 @@ const App = () => {
                 option1="Bulbasaur"
                 option2="Charmander"
                 option3="Squirtle"
+                option4="Pikachu"
                 onValueChange={(value) => setAnswer4(value)}
                 answer="Squirtle"
             />
