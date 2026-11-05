@@ -54,6 +54,7 @@ const App = () => {
                 option2="Pikachu"
                 option3="Squirtle"
                 onValueChange={(value) => setAnswer1(value)}
+                answer="How do you not know this is Pikachu"
             />
 
             <Question
@@ -63,6 +64,7 @@ const App = () => {
                 option2="Squirtle"
                 option3="Bulbasaur"
                 onValueChange={(value) => setAnswer2(value)}
+                answer="Bulbasaur"
             />
 
             <Question
@@ -72,6 +74,7 @@ const App = () => {
                 option2="Charmander"
                 option3="Pikachu"
                 onValueChange={(value) => setAnswer3(value)}
+                answer="Charmander"
             />
 
             <Button
