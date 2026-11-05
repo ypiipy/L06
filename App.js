@@ -52,10 +52,7 @@ const App = () => {
             <Question
                 number={1}
                 image="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/025.png"
-                option1="Charmander"
-                option2="Pikachu"
-                option3="Squirtle"
-                option4="Bulbasaur"
+                options={['Charmander', 'Pikachu', 'Squirtle', 'Bulbasaur']}
                 onValueChange={(value) => setAnswer1(value)}
                 answer="How do you not know this is Pikachu"
             />
@@ -63,10 +60,7 @@ const App = () => {
             <Question
                 number={2}
                 image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMinhKzVmPip5tqeJepk2Wc7WPy8XSh_SYThjGC8zSdw&s"
-                option1="Pikachu"
-                option2="Squirtle"
-                option3="Bulbasaur"
-                option4="Charmander"
+                options={['Charmander', 'Pikachu', 'Squirtle', 'Bulbasaur']}
                 onValueChange={(value) => setAnswer2(value)}
                 answer="Bulbasaur"
             />
@@ -74,10 +68,7 @@ const App = () => {
             <Question
                 number={3}
                 image="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/004.png"
-                option1="Bulbasaur"
-                option2="Charmander"
-                option3="Pikachu"
-                option4="Squirtle"
+                options={['Charmander', 'Pikachu', 'Squirtle', 'Bulbasaur']}
                 onValueChange={(value) => setAnswer3(value)}
                 answer="Charmander"
             />
@@ -85,10 +76,7 @@ const App = () => {
             <Question
                 number={4}
                 image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFIjxfnSF1b0qh3XtFfdb6S8xooV4AAUiVkUwiNU7zCQ&s"
-                option1="Bulbasaur"
-                option2="Charmander"
-                option3="Squirtle"
-                option4="Pikachu"
+                options={['Charmander', 'Pikachu', 'Squirtle', 'Bulbasaur']}
                 onValueChange={(value) => setAnswer4(value)}
                 answer="Squirtle"
             />

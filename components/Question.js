@@ -2,10 +2,10 @@ import React from 'react';
 import {View, Text, Image, TouchableOpacity, Alert} from 'react-native';
 import {Picker} from '@react-native-picker/picker';
 
-const Question = ({number, image, option1, option2, option3, option4, onValueChange, answer}) => {
+const Question = ({number, image, options, onValueChange, answer}) => {
     return (
         <View>
-            <Text style={{ fontSize: 18 }}>
+            <Text style={{fontSize: 18}}>
                 Question {number}: Who's that Pokemon?
             </Text>
 
@@ -15,10 +15,10 @@ const Question = ({number, image, option1, option2, option3, option4, onValueCha
                 </TouchableOpacity>
 
             <Picker onValueChange={onValueChange}>
-                <Picker.Item label={option1} value={option1} />
-                <Picker.Item label={option2} value={option2} />
-                <Picker.Item label={option3} value={option3} />
-                <Picker.Item label={option4} value={option4} />
+                <Picker.Item label={options[0]} value={options[0]} />
+                <Picker.Item label={options[1]} value={options[1]} />
+                <Picker.Item label={options[2]} value={options[2]} />
+                <Picker.Item label={options[3]} value={options[3]} />
             </Picker>
         </View>
     );
