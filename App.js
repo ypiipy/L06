@@ -38,11 +38,8 @@ const App = () => {
             <Text>Question 1: Who is this Pokémon?</Text>
 
             <Image
-                source={{
-                    uri: 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/025.png',
-                }}
+                source={{uri: 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/025.png'}}
                 style={{ width: 200, height: 200 }}
-                resizeMode="contain"
             />
 
             <Picker onValueChange={(value) => setAnswer1(value)}>
@@ -54,11 +51,8 @@ const App = () => {
             <Text>Question 2: Who is this Pokémon?</Text>
 
             <Image
-                source={{
-                    uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMinhKzVmPip5tqeJepk2Wc7WPy8XSh_SYThjGC8zSdw&s',
-                }}
+                source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMinhKzVmPip5tqeJepk2Wc7WPy8XSh_SYThjGC8zSdw&s'}}
                 style={{ width: 200, height: 200 }}
-                resizeMode="contain"
             />
 
             <Picker onValueChange={(value) => setAnswer2(value)}>
@@ -70,11 +64,8 @@ const App = () => {
             <Text>Question 3: Who is this Pokémon?</Text>
 
             <Image
-                source={{
-                    uri: 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/004.png',
-                }}
+                source={{uri: 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/004.png'}}
                 style={{ width: 200, height: 200 }}
-                resizeMode="contain"
             />
 
             <Picker onValueChange={(value) => setAnswer3(value)}>
